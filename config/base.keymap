@@ -197,7 +197,7 @@ ZMK_HOLD_TAP(mb, bindings = <&mo>, <&mkp>; flavor = "balanced";
 // MacOS specifics
 ZMK_MACRO(w_fill, bindings = <&kp GLOBE &kp LA(F)>;)
 ZMK_MACRO(w_right, bindings = <&kp GLOBE &kp LA(RIGHT)>;)
-ZMK_MACRO(w_left, bindings = <&kp GLOBE &kp LA(left)>;)
+ZMK_MACRO(w_left, bindings = <&kp GLOBE &kp LA(LEFT)>;)
 ZMK_MACRO(w_up, bindings = <&kp GLOBE &kp LA(UP)>;)
 ZMK_MACRO(w_down, bindings = <&kp GLOBE &kp LA(DOWN)>;)
 
