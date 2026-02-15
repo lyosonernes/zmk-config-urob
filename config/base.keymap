@@ -133,7 +133,7 @@ ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
 ZMK_TRI_STATE(
     smart_mouse, bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
     ignored-key-positions =
-        <LT1 LT2 LH0 LH1 RT1 RT2 RT3 RM0 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RH0 RH1>;
+        <LT1 LT2 LH0 LH1 RT0 RT1 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RBO RB1 RB2 RB3 RB4 RH0 RH1>;
     ignored-layers = <MOUSE NAV FN>;)
 
 /* Custom behaviors */
@@ -196,10 +196,10 @@ ZMK_HOLD_TAP(mb, bindings = <&mo>, <&mkp>; flavor = "balanced";
 
 // MacOS specifics
 ZMK_MACRO(w_fill, bindings = <&macro_press &kp GLOBE>,<&macro_tap &kp LG(F)>,<&macro_release &kp GLOBE>;)
-ZMK_MACRO(w_right, bindings = <&macro_press &kp GLOBE>,<&macro_tap &kp LG(RIGHT)>,<&macro_release &kp GLOBE>;)
-ZMK_MACRO(w_left, bindings = <&macro_press &kp GLOBE>,<&macro_tap &kp LG(LEFT)>,<&macro_release &kp GLOBE>;)
-ZMK_MACRO(w_up, bindings = <&macro_press &kp GLOBE>,<&macro_tap &kp LG(UP)>,<&macro_release &kp GLOBE>;)
-ZMK_MACRO(w_down, bindings = <&macro_press &kp GLOBE>,<&macro_tap &kp LG(DOWN)>,<&macro_release &kp GLOBE>;)
+ZMK_MACRO(w_right, bindings = <&macro_press &kp GLOBE &kp LG>,<&macro_tap &kp RIGHT>,<&macro_release &kp GLOBE &kp LG>;)
+ZMK_MACRO(w_left, bindings = <&macro_press &kp GLOBE &kp LG>,<&macro_tap &kp LEFT>,<&macro_release &kp GLOBE &kp LG>;)
+ZMK_MACRO(w_up, bindings = <&macro_press &kp GLOBE &kp LG>,<&macro_tap &kp UP>,<&macro_release &kp GLOBE &kp LG>;)
+ZMK_MACRO(w_down, bindings = <&macro_press &kp GLOBE &kp LG>,<&macro_tap &kp DOWN>,<&macro_release &kp GLOBE &kp LG>;)
 
 /* Keymap */
 
