@@ -195,11 +195,11 @@ ZMK_HOLD_TAP(mb, bindings = <&mo>, <&mkp>; flavor = "balanced";
 #define PAGE_NEXT &kp LC(RIGHT_ARROW)     // Navigate to next page.
 
 // MacOS specifics
-ZMK_MACRO(w_fill, bindings = <&macro_press &kp GLOBE>,<&macro_tap &kp LG(F)>,<&macro_release &kp GLOBE>;)
-ZMK_MACRO(w_right, bindings = <&macro_press &kp GLOBE &kp LGUI>,<&macro_tap &kp RIGHT>,<&macro_release &kp GLOBE &kp LGUI>;)
-ZMK_MACRO(w_left, bindings = <&macro_press &kp GLOBE &kp LGUI>,<&macro_tap &kp LEFT>,<&macro_release &kp GLOBE &kp LGUI>;)
-ZMK_MACRO(w_up, bindings = <&macro_press &kp GLOBE &kp LGUI>,<&macro_tap &kp UP>,<&macro_release &kp GLOBE &kp LGUI>;)
-ZMK_MACRO(w_down, bindings = <&macro_press &kp GLOBE &kp LGUI>,<&macro_tap &kp DOWN>,<&macro_release &kp GLOBE &kp LGUI>;)
+ZMK_MACRO(w_fill, bindings = <&macro_press &kp CAPS>,<&macro_tap &kp LG(F)>,<&macro_release &kp CAPS>;)
+ZMK_MACRO(w_right, bindings = <&macro_press &kp CAPS>,<&macro_tap &kp LG(RIGHT)>,<&macro_release &kp CAPS>;)
+ZMK_MACRO(w_left, bindings = <&macro_press &kp CAPS>,<&macro_tap &kp LG(LEFT)>,<&macro_release &kp CAPS>;)
+ZMK_MACRO(w_up, bindings = <&macro_press &kp CAPS>,<&macro_tap &kp LG(UP)>,<&macro_release &kp CAPS>;)
+ZMK_MACRO(w_down, bindings = <&macro_press &kp CAPS>,<&macro_tap &kp LG(DOWN)>,<&macro_release &kp CAPS>;)
 
 /* Keymap */
 
@@ -224,7 +224,7 @@ ZMK_BASE_LAYER(Base,
 
 ZMK_BASE_LAYER(Nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp LA(F4)    ___           &kp LS(TAB)   &swapper      ___         ,   &kp PG_UP     NAV_BSPC      NAV_DEL       &kp INS       &kp TAB     ,
+    &kp LC(W)     ___           &kp LS(TAB)   &swapper      ___         ,   &kp PG_UP     NAV_BSPC      NAV_DEL       &kp INS       &kp TAB     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     ___         ,   &kp PG_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT   ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
