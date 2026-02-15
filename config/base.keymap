@@ -196,10 +196,10 @@ ZMK_HOLD_TAP(mb, bindings = <&mo>, <&mkp>; flavor = "balanced";
 
 // MacOS specifics
 ZMK_MACRO(w_fill, bindings = <&macro_press &kp GLOBE>,<&macro_tap &kp LG(F)>,<&macro_release &kp GLOBE>;)
-ZMK_MACRO(w_right, bindings = <&macro_press &kp GLOBE &kp LG>,<&macro_tap &kp RIGHT>,<&macro_release &kp GLOBE &kp LG>;)
-ZMK_MACRO(w_left, bindings = <&macro_press &kp GLOBE &kp LG>,<&macro_tap &kp LEFT>,<&macro_release &kp GLOBE &kp LG>;)
-ZMK_MACRO(w_up, bindings = <&macro_press &kp GLOBE &kp LG>,<&macro_tap &kp UP>,<&macro_release &kp GLOBE &kp LG>;)
-ZMK_MACRO(w_down, bindings = <&macro_press &kp GLOBE &kp LG>,<&macro_tap &kp DOWN>,<&macro_release &kp GLOBE &kp LG>;)
+ZMK_MACRO(w_right, bindings = <&macro_press &kp GLOBE &kp LGUI>,<&macro_tap &kp RIGHT>,<&macro_release &kp GLOBE &kp LGUI>;)
+ZMK_MACRO(w_left, bindings = <&macro_press &kp GLOBE &kp LGUI>,<&macro_tap &kp LEFT>,<&macro_release &kp GLOBE &kp LGUI>;)
+ZMK_MACRO(w_up, bindings = <&macro_press &kp GLOBE &kp LGUI>,<&macro_tap &kp UP>,<&macro_release &kp GLOBE &kp LGUI>;)
+ZMK_MACRO(w_down, bindings = <&macro_press &kp GLOBE &kp LGUI>,<&macro_tap &kp DOWN>,<&macro_release &kp GLOBE &kp LGUI>;)
 
 /* Keymap */
 
