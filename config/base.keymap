@@ -195,11 +195,10 @@ ZMK_HOLD_TAP(mb, bindings = <&mo>, <&mkp>; flavor = "balanced";
 #define PAGE_NEXT &kp LC(RIGHT_ARROW)     // Navigate to next page.
 
 // MacOS specifics
-# define W_FILL &kp LC(LA(F)) // WINDOW FILL
-# define W_LEFT &kp LC(LA(LEFT)) // WINDOW LEFT
-# define W_RIGHT &kp LC(LA(RIGHT)) // WINDOW RIGHT
-# define W_UP &kp LC(LA(UP)) // WINDOW UP
-# define W_DOWN &kp LC(LA(DOWN)) // WINDOW DOWN
+ZMK_MACRO(w_fill, bindings = <&kp GLOBE &kp LA(F)>;)
+ZMK_MACRO(w_right, bindings = <&kp GLOBE &kp LA(RIGHT)>;)
+ZMK_MACRO(w_up, bindings = <&kp GLOBE &kp LA(UP)>;)
+ZMK_MACRO(w_down, bindings = <&kp GLOBE &kp LA(DOWN)>;)
 
 /* Keymap */
 
@@ -228,7 +227,7 @@ ZMK_BASE_LAYER(Nav,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     ___         ,   &kp PG_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT   ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           ___           ___           ___           ___         ,   W_FILL        W_LEFT        W_DOWN        W_UP          W_RIGHT     ,
+    ___           ___           ___           ___           ___         ,   &w_fill       &w_left       &w_down       &w_up         &w_right    ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                               ___           ___         ,   ___           CANCEL
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
